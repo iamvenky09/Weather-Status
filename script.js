@@ -21,15 +21,17 @@ async function checkWheather(city) {
 
     console.log(data.weather[0].main);
     if (data.weather[0].main == "Clouds") {
-      weatherIcon.src = "img/clouds.png";
+      weatherIcon.src = "https://res.cloudinary.com/dgmfwbjik/image/upload/v1726566638/clouds_vrd3qx.png";
     } else if (data.weather[0].main == "Clear") {
-      weatherIcon.src = "img/clear.png";
+      weatherIcon.src = "https://res.cloudinary.com/dgmfwbjik/image/upload/v1726566638/clear_mkywus.png";
     } else if (data.weather[0].main == "Rain") {
-      weatherIcon.src = "img/rain.png";
+      weatherIcon.src = "https://res.cloudinary.com/dgmfwbjik/image/upload/v1726566638/rain_byfuci.png";
     } else if (data.weather[0].main == "Drizzle") {
-      weatherIcon.src = "img/drizzle.png";
+      weatherIcon.src = "https://res.cloudinary.com/dgmfwbjik/image/upload/v1726566638/drizzle_hq3hfa.png";
     } else if (data.weather[0].main == "Mist") {
-      weatherIcon.src = "img/mist.png";
+      weatherIcon.src = "https://res.cloudinary.com/dgmfwbjik/image/upload/v1726566638/mist_ve1cgr.png";
+    }else if (data.weather[0].main == "Snow") {
+      weatherIcon.src = "https://res.cloudinary.com/dgmfwbjik/image/upload/v1726566638/snow_x93pdd.png";
     }
 
     document.querySelector(".weather").style.display = "block";
